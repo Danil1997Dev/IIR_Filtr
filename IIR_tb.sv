@@ -22,7 +22,42 @@ begin
   end
   @(posedge clk);
   i_signal = 0;
-  #1000@(posedge clk)
+  #1000@(posedge clk);
+  reset_l = 1;
+  @(posedge clk);
+  i_signal = 0;
+    repeat(5680/8) begin  
+        @(posedge clk);   
+        i_signal = 32'b01000001111110000000000000000000;
+    end
+    repeat(5680/8) begin  
+        @(posedge clk);   
+        i_signal = 32'b01000010011111000000000000000000;
+    end
+    repeat(5680/8) begin  
+        @(posedge clk);   
+        i_signal = 32'b01000010011111000000000000000000;
+    end
+    repeat(5680/8) begin  
+        @(posedge clk);   
+        i_signal = 32'b01000001111110000000000000000000;
+    end
+    repeat(5680/8) begin  
+        @(posedge clk);   
+        i_signal = 32'b11000001111110000000000000000000;
+    end
+    repeat(5680/8) begin  
+        @(posedge clk);   
+        i_signal = 32'b11000010011111000000000000000000;
+    end 
+    repeat(5680/8) begin  
+        @(posedge clk);   
+        i_signal = 32'b11000010011111000000000000000000;
+    end
+    repeat(5680/8) begin  
+        @(posedge clk);   
+        i_signal = 32'b11000001111110000000000000000000;
+    end
   $stop;
 end
 

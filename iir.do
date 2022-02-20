@@ -63,5 +63,5 @@ view signals
 #add wave 
 add wave -noupdate -divider {all}
 add wave sim:/$name/* 
-add wave sim:/$name/dut/* 
+add wave  -noupdate -radix float32 sim:/$name/dut/* 
 run -all

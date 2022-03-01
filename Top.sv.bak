@@ -1,0 +1,13 @@
+module Top
+(
+  input clk,reset_l, 
+  input [2:0]opt,
+  input [31:0] i_signal, 
+  output logic [31:0] o_signal  
+);
+
+  logic done;
+
+  Convers cnv ( .clk(clk), .clk_en(1), .dataa(i_signal), .datab(0), .n(opt), .reset(!reset_l), .reset_req(0), .start(1), .done(done), .result( signal ));
+  IIR_Filtr filtr ( .clk(clk), .i_signal(signal), .reset_l(reset_l), .i_en(done), .o_signal( o_signal ));
+endmodule 

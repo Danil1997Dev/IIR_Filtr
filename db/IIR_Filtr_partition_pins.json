@@ -2,7 +2,60 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "o_signal[23]",
+					"strict" : false
+				},
+				{
+					"name" : "o_signal[24]",
+					"strict" : false
+				},
+				{
+					"name" : "o_signal[25]",
+					"strict" : false
+				},
+				{
+					"name" : "o_signal[26]",
+					"strict" : false
+				},
+				{
+					"name" : "o_signal[27]",
+					"strict" : false
+				},
+				{
+					"name" : "o_signal[28]",
+					"strict" : false
+				},
+				{
+					"name" : "o_signal[29]",
+					"strict" : false
+				},
+				{
+					"name" : "o_signal[30]",
+					"strict" : false
+				},
+				{
+					"name" : "opt_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "opt_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "opt_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_l",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

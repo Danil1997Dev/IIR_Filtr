@@ -8,10 +8,7 @@ module IIR
   logic en = 1;
   
   logic [3:0] cnt;
-  logic sampl;
-  //bit clk_s;
-  
-  //PLL pll_samp ( .refclk(clk), .rst(!reset_l), .outclk_0(clk_s));
+  logic sampl; 
   
   always_ff @(posedge clk or negedge reset_l)
     begin
@@ -78,19 +75,19 @@ module IIR
 	
   FP_ADD add_b3 (.clk(clk),.areset(~reset_l),.en(en),.a(summ_b2),.b(mlt_b3),.q(summ_b3));  
   
-  always@(sampl)
+  always @(sampl)
     begin
 	   if (sampl)
 		  begin
-	       sh_1 <= summ_a3;
-		    sh_2 <= sh_1;
-			 o_signal <= summ_b3;
+	       sh_1 = summ_a3;
+		    sh_2 = sh_1;
+			 o_signal = summ_b3;
 		  end
 	   else
 		  begin
-	       sh_1 <= sh_1;
-		    sh_2 <= sh_2;
-			 o_signal <= o_signal;
+	       sh_1 = sh_1;
+		    sh_2 = sh_2;
+			 o_signal = o_signal;
 		  end
 	 end
   

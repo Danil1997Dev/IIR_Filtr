@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 10",
+		"os_version" : "10.0"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "none",
+		"error_message" : "flag \"inst sh_1[8]_8470 sh_1[8]_8470 {}\" -fold|-unfold: must refer to HIER instance",
+		"source_file" : "/quartus/gcl/nlwq/nlwq_view.cpp",
+		"line" : "161",
+		"stack_trace" : "\t0x7ffd4530ed3d: GCL_NLWQ + 0x26ed3d (?execute_command@NLWQ_VIEW@@QEAAPEBDPEBD00000_N@Z + 0x6d)\n\t0x7ffd48f49787: nlv_nuiq + 0x69787 (?on_expand_node@NUIQ_VIEW@@IEAAXVNlviewList@@V?$QFlags@W4KeyboardModifier@Qt@@@@W4NUIQ_FILTER_TYPE@@@Z + 0x137)\n\t0x7ffd48f15741: nlv_nuiq + 0x35741 (?do_increment_more@NUIQ_VIEW@@IEAAXV?$QFlags@W4KeyboardModifier@Qt@@@@HH@Z + 0x1f1)\n\t0x7ffd48ee994c: nlv_nuiq + 0x994c (?qt_static_metacall@NUIQ_VIEW@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z + 0x57c)\n\t 0x65e6c420: QtCore4 + 0x11c420 (?activate@QMetaObject@@SAXPEAVQObject@@PEBU1@HPEAPEAX@Z + 0x520)\n\t0x7ffd48f351c1: nlv_nuiq + 0x551c1 (?increment_more@NUIQ_VIEW@@IEAAXV?$QFlags@W4KeyboardModifier@Qt@@@@HH@Z + 0x41)\n\t0x7ffd48f41a88: nlv_nuiq + 0x61a88 (?mouseDoubleClickEvent@NUIQ_VIEW@@MEAAXPEAVQMouseEvent@@@Z + 0x88)\n\t 0x650a07a8: QtGui4 + 0x607a8 (?event@QWidget@@MEAA_NPEAVQEvent@@@Z + 0xe8)\n\t 0x65062e95: QtGui4 + 0x22e95 (?notify_helper@QApplicationPrivate@@QEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0xf5)\n\t 0x65061a8e: QtGui4 + 0x21a8e (?notify@QApplication@@UEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x71e)\n\t 0x65e5d92b: QtCore4 + 0x10d92b (?notifyInternal@QCoreApplication@@AEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x7b)\n\t 0x65065cfe: QtGui4 + 0x25cfe (?sendMouseEvent@QApplicationPrivate@@SA_NPEAVQWidget@@PEAVQMouseEvent@@00PEAPEAV2@AEAV?$QPointer@VQWidget@@@@_N@Z + 0x1de)\n\t 0x650c56f0: QtGui4 + 0x856f0 (?trUtf8@QScrollBar@@SA?AVQString@@PEBD0H@Z + 0x1440)\n\t 0x650c90b1: QtGui4 + 0x890b1 (?winMouseButtonUp@QApplication@@SAXXZ + 0x2761)\n\t0x7ffdab805b6c: USER32 + 0x15b6c (CallWindowProcW + 0x3bc)\n\t0x7ffdab805561: USER32 + 0x15561 (DispatchMessageW + 0x1f1)\n\t 0x65e82802: QtCore4 + 0x132802 (?processEvents@QEventDispatcherWin32@@UEAA_NV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0x3e2)\n\t 0x650c0eb4: QtGui4 + 0x80eb4 (?openPopup@QApplicationPrivate@@QEAAXPEAVQWidget@@@Z + 0x204)\n\t 0x65e5a88b: QtCore4 + 0x10a88b (?exec@QEventLoop@@QEAAHV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0x22b)\n\t 0x65e5ce6f: QtCore4 + 0x10ce6f (?exec@QCoreApplication@@SAHXZ + 0xdf)\n\t0x7ff766a9197b: quartus + 0x197b (?qgq_main@@YAHHPEAPEBD@Z + 0x7b)\n\t0x7ffd94302e98: CCL_MSG + 0x12e98 (?msg_main_thread@@YAPEAXPEAX@Z + 0x18)\n\t0x7ffd9430467e: CCL_MSG + 0x1467e (?msg_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x6e)\n\t0x7ffd94406660: ccl_mem + 0x16660 (?mem_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x70)\n\t0x7ffd94302761: CCL_MSG + 0x12761 (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0xa1)\n\t0x7ff766a924e7: quartus + 0x24e7 (WinMain + 0x127)\n\t0x7ff766a91e58: quartus + 0x1e58 (__tmainCRTStartup + 0x148)\n\t0x7ffdabad7bd3: KERNEL32 + 0x17bd3 (BaseThreadInitThunk + 0x13)\n\t0x7ffdac88ced0: ntdll + 0x6ced0 (RtlUserThreadStart + 0x20)\n",
+		"subsystem" : "NLWQ"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "18.1.0",
+		"build" : "625",
+		"edition" : "Lite Edition"
+	}
+}

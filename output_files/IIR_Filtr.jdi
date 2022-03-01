@@ -1,8 +1,22 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="731cd1f10c7990a522c0"/>
+    <hash md5_digest_80b="9f526ac61e21ab7582d9"/>
   </project>
   <file_info>
-    <file device="5CGXFC7C7F23C8" path="IIR_Filtr.sof" usercode="0xFFFFFFFF"/>
+    <file device="5CEBA2U15C7" path="IIR_Filtr.sof" usercode="0xFFFFFFFF"/>
   </file_info>
+  <sld_infos>
+    <sld_info hpath="Convers:cnv_i" name="cnv_i">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME Convers HAS_SOPCINFO 1 GENERATION_ID 1645968036"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="Convers:cnv_o" name="cnv_o">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME Convers HAS_SOPCINFO 1 GENERATION_ID 1645968036"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
 </sld_project_info>

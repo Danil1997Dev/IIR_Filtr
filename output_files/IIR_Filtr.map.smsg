@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at IIR_Filtr.sv(78): always construct contains both blocking and non-blocking assignments File: D:/intelFPGA/18.1/IIR_Filtr/IIR_Filtr.sv Line: 78

@@ -1,0 +1,10 @@
+module IIR_Filtr
+(
+  input clk,reset_l, 
+  input [31:0] i_signal, 
+  output logic [31:0] o_signal  
+);
+
+IIR iir_inst (.*);
+
+endmodule 

@@ -1,0 +1,38 @@
+`timescale 10 ns/1 ns
+`define ItF 2
+module IIR_tb#(paremeter T=50_000_000/10_000_000,N=50_000_000/880_000)
+();
+  logic clk,reset_l,clk_en,start;
+  logic [2:0] opt;
+  logic [31:0] i_signal;
+  logic [31:0] o_signal; 
+  Top dut (.*);
+always #1 clk = ~clk;
+  logic [31:0] mem [0:N-1];
+initial
+begin
+  sin();
+  $stop;
+end
+
+task sin(); 
+  logic  cnt; 
+  begin
+  clk = 0; 
+  i_signal = 0;
+  reset_l = 0;
+  @(posedge clk);
+  i_signal = 0;
+  opt = `ItF;
+  reset_l = 1;
+    for (int i=0;i<N;i++)
+      begin
+        repeat(T) begin
+        @(posedge clk);
+        opt = `ItF;   
+        clk_en = 1;
+        i_signal = mem[i];   end   
+      end
+  end
+endtask
+endmodule
